@@ -6,6 +6,8 @@ import { motion } from "motion/react";
 import {
   ArrowDown,
   ArrowRight,
+  Download,
+  Mail,
   Sparkles,
   Zap,
   ShieldCheck,
@@ -13,7 +15,9 @@ import {
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import HeroScene from "@/components/3d/HeroScene";
-import TypewriterEffect from "@/components/hero/TypewriterEffect";
+
+const CV_DRIVE_VIEW_URL =
+  "https://drive.google.com/file/d/1hU8A4F06ssmBs3jV4XWsJMwZf0GX4Ji0/view?usp=sharing";
 
 export default function Hero() {
   return (
@@ -41,21 +45,21 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400" />
               </span>
               <span className="font-medium tracking-wide">
-                WordPress Developer &bull; Custom Web &bull; SEO
+                WordPress Developer &bull; SEO &bull; Custom Web
               </span>
             </motion.div>
 
-            {/* Main Headline with Dynamic Typing Effect */}
+            {/* Main Clear Headline */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-5xl tracking-tight leading-[1.18] text-white"
+              className="w-full"
             >
-              <h1>
-                Building Better Websites.
-                <span className="block text-2xl sm:text-3xl md:text-4xl font-semibold text-slate-300 mt-2 sm:mt-3">
-                  I craft <TypewriterEffect />
+              <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] tracking-tight leading-[1.14] text-white">
+                WordPress Developer Building{" "}
+                <span className="text-gradient-cyan block mt-1.5 sm:mt-2">
+                  Fast, SEO-Friendly Websites.
                 </span>
               </h1>
             </motion.div>
@@ -67,29 +71,40 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl font-normal"
             >
-              WordPress-focused developer dedicated to building fast, clean, and conversion-optimized websites. Combining custom CMS setups with modern frontend engineering and Core Web Vitals performance.
+              Specializing in custom WordPress, Elementor, and WooCommerce store development, Core Web Vitals speed optimization, technical SEO, and modern frontend engineering with React and Next.js.
             </motion.p>
 
-            {/* Action Buttons */}
+            {/* Clear Calls to Action (View My Projects, Download CV, Contact Me) */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-8 flex flex-wrap items-center gap-4 w-full sm:w-auto"
+              className="mt-8 flex flex-wrap items-center gap-3.5 w-full sm:w-auto"
             >
               <Link
                 href="#projects"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl font-heading font-semibold text-sm bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-600 text-slate-950 hover:brightness-110 active:scale-95 transition-all shadow-md shadow-cyan-500/25"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold text-xs sm:text-sm bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-600 text-slate-950 hover:brightness-110 active:scale-95 transition-all shadow-md shadow-cyan-500/25"
               >
-                <span>Explore Featured Work</span>
+                <span>View My Projects</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
 
+              <a
+                href={CV_DRIVE_VIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-heading font-medium text-xs sm:text-sm text-slate-200 glass-pill hover:bg-white/10 hover:text-white border border-white/15 transition-all"
+              >
+                <Download className="w-4 h-4 text-cyan-400" />
+                <span>Download CV</span>
+              </a>
+
               <Link
                 href="#contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-heading font-medium text-sm text-slate-200 glass-pill hover:bg-white/10 hover:text-white border border-white/10 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-heading font-medium text-xs sm:text-sm text-slate-200 glass-pill hover:bg-white/10 hover:text-white border border-white/15 transition-all"
               >
-                <span>Get in Touch</span>
+                <Mail className="w-4 h-4 text-slate-400" />
+                <span>Contact Me</span>
               </Link>
 
               {/* Verified Social Links */}
@@ -105,7 +120,7 @@ export default function Hero() {
                   <GithubIcon className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/kavinda-madusanka-464a97330/"
+                  href="https://linkedin.com/in/kavinda-madusanka-547258321"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2.5 rounded-xl glass-pill text-slate-300 hover:text-cyan-400 hover:border-cyan-500/30 transition-all"
@@ -126,15 +141,15 @@ export default function Hero() {
             >
               <div className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400" />
-                <span>WordPress &amp; WooCommerce</span>
+                <span>WordPress &bull; Elementor &bull; WooCommerce</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Zap className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Core Web Vitals Optimized</span>
+                <span>Core Web Vitals &amp; Speed</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Clean Semantic Code</span>
+                <span>Technical SEO &amp; Security</span>
               </div>
             </motion.div>
           </div>
@@ -183,7 +198,7 @@ export default function Hero() {
                         Kavinda Madusanka
                       </div>
                       <div className="text-[10px] text-cyan-400 font-medium">
-                        WordPress Developer &bull; Custom Web
+                        WordPress Developer &bull; SEO Specialist
                       </div>
                     </div>
                     <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -225,3 +240,4 @@ export default function Hero() {
     </section>
   );
 }
+

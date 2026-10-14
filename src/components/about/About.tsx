@@ -9,9 +9,9 @@ import {
   Sparkles,
   Zap,
   Globe,
-  Database,
   Search,
   ShieldCheck,
+  TrendingUp,
   CheckCircle2,
 } from "lucide-react";
 import { SKILL_CATEGORIES } from "@/data/portfolioData";
@@ -24,16 +24,16 @@ export default function About() {
 
   const getTabIcon = (id: string) => {
     switch (id) {
-      case "wordpress":
+      case "wordpress-cms":
         return <Layers className="w-4 h-4 text-cyan-400" />;
-      case "custom-dev":
+      case "frontend-dev":
         return <Code2 className="w-4 h-4 text-blue-400" />;
-      case "databases":
-        return <Database className="w-4 h-4 text-indigo-400" />;
-      case "seo-performance":
+      case "seo-optimization":
         return <Search className="w-4 h-4 text-emerald-400" />;
       case "security-maintenance":
         return <ShieldCheck className="w-4 h-4 text-amber-400" />;
+      case "digital-marketing":
+        return <TrendingUp className="w-4 h-4 text-violet-400" />;
       default:
         return <Sparkles className="w-4 h-4 text-cyan-400" />;
     }
@@ -82,11 +82,11 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="lg:col-span-5 flex flex-col justify-between p-6 rounded-2xl glass-card border border-white/10"
           >
-            {/* Distinct Generated Developer Workspace Image (NOT repeating portrait) */}
+            {/* Developer Workspace Image */}
             <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-950 border border-white/10 mb-5 shadow-lg group">
               <Image
                 src="/about-workspace.jpg"
-                alt="Modern Developer Workspace & Development Rig"
+                alt="Modern Developer Workspace & Development Environment"
                 fill
                 sizes="(max-width: 1024px) 100vw, 500px"
                 className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -104,13 +104,16 @@ export default function About() {
               </div>
             </div>
 
-            {/* Concise Editorial Summary */}
+            {/* Professional Introduction */}
             <div className="space-y-3.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
               <p>
-                My primary focus is <strong className="text-white">WordPress development</strong>—engineering bespoke business sites, landing pages, and WooCommerce stores with localized checkout and clean responsive layouts.
+                My work centers on building practical, high-quality <strong className="text-white">WordPress websites</strong>—from dynamic Elementor business pages to localized WooCommerce online stores.
               </p>
               <p>
-                To avoid plugin bloat and slow load times, I bring <strong className="text-white">custom frontend capabilities</strong> (React, Next.js, Tailwind CSS) and strict <strong className="text-cyan-400">Core Web Vitals</strong> optimization to every project I build.
+                I prioritize <strong className="text-cyan-400">speed optimization, technical SEO, responsive design, and website security</strong> so every site loads smoothly and supports tangible business growth.
+              </p>
+              <p>
+                When a project demands custom interactivity beyond standard CMS limits, I utilize modern <strong className="text-white">frontend engineering</strong> with HTML5, CSS3, JavaScript, React, and Next.js to deliver clean, maintainable web experiences.
               </p>
             </div>
 
@@ -122,7 +125,7 @@ export default function About() {
               </div>
               <div className="p-2 rounded-lg bg-white/[0.02] border border-white/5 flex items-center gap-2">
                 <Zap className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
-                <span>Speed Focused</span>
+                <span>Speed &amp; SEO Focused</span>
               </div>
             </div>
           </motion.div>
@@ -155,7 +158,7 @@ export default function About() {
                       key={cat.id}
                       type="button"
                       onClick={() => setActiveSkillTab(cat.id)}
-                      className={`px-3.5 py-2 rounded-xl text-xs font-medium transition-all flex items-center gap-2 ${
+                      className={`px-3 py-2 rounded-xl text-xs font-medium transition-all flex items-center gap-2 ${
                         isActive
                           ? "bg-cyan-500 text-slate-950 font-semibold shadow-md shadow-cyan-500/20 scale-[1.02]"
                           : "bg-slate-900/80 text-slate-300 hover:text-white border border-white/5"
@@ -218,7 +221,7 @@ export default function About() {
                 Verified across active projects &amp; client repositories
               </span>
               <span className="font-mono text-[10px] text-slate-500">
-                No Fake Progress Bars
+                No Arbitrary Percentages
               </span>
             </div>
           </motion.div>

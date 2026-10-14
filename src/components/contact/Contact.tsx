@@ -34,14 +34,14 @@ export default function Contact() {
           </div>
 
           <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-4xl tracking-tight text-white">
-            Let&apos;s Build Something{" "}
-            <span className="text-gradient-cyan block mt-1">
-              Fast, Scalable &amp; Exceptional.
+            Let&apos;s Build{" "}
+            <span className="text-gradient-cyan">
+              Something Great.
             </span>
           </h2>
 
           <p className="mt-3 text-xs sm:text-sm text-slate-300 leading-relaxed">
-            I am available for developer roles and custom WordPress / web development projects. Reach out directly via email, GitHub, or LinkedIn.
+            I invite recruiters, agency leads, and potential clients to connect and discuss suitable WordPress development, custom web engineering, or website optimization opportunities.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function Contact() {
                 Direct Email
               </h3>
               <p className="text-[11px] text-slate-400 mb-4 leading-relaxed">
-                Send inquiries, job opportunities, or project briefs straight to my inbox.
+                Send job specifications, project proposals, or inquiries straight to my inbox.
               </p>
 
               <a
@@ -121,7 +121,7 @@ export default function Contact() {
                 GitHub Profile
               </h3>
               <p className="text-[11px] text-slate-400 mb-4 leading-relaxed">
-                Explore source code, repositories, commit history, and technical architectures.
+                Inspect source repositories, commit history, and genuine project implementations.
               </p>
 
               <div className="font-mono text-xs text-slate-300 block truncate font-medium mb-3">
@@ -164,17 +164,17 @@ export default function Contact() {
                 LinkedIn Profile
               </h3>
               <p className="text-[11px] text-slate-400 mb-4 leading-relaxed">
-                Connect professionally, review career background, and discuss developer opportunities.
+                Connect professionally, review profile endorsements, and discuss full-time or contract roles.
               </p>
 
               <div className="font-mono text-xs text-slate-300 block truncate font-medium mb-3">
-                Kavinda Madusanka
+                kavinda-madusanka-547258321
               </div>
             </div>
 
             <div className="pt-3 border-t border-white/5">
               <a
-                href="https://www.linkedin.com/in/kavinda-madusanka-464a97330/"
+                href="https://linkedin.com/in/kavinda-madusanka-547258321"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-2 flex items-center justify-center gap-1.5 rounded-xl bg-white/5 border border-white/10 text-white font-semibold text-xs hover:bg-white/10 hover:border-blue-500/40 transition-colors"
@@ -189,3 +189,4 @@ export default function Contact() {
     </section>
   );
 }
+

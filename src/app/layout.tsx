@@ -24,18 +24,28 @@ export const viewport: Viewport = {
   maximumScale: 5,
 };
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "https://kavinda-portfolio.vercel.app");
+
 export const metadata: Metadata = {
-  title: "Kavinda Madusanka | WordPress Developer & Custom Web Specialist",
+  title: "Kavinda Madusanka | WordPress Developer Building Fast, SEO-Friendly Websites",
   description:
-    "Building Better Websites. Making Them Faster, Smarter & Search-Ready. WordPress Developer specializing in custom web development, WooCommerce, Core Web Vitals optimization, and technical SEO.",
+    "WordPress Developer building fast, SEO-friendly websites. Specializing in custom WordPress, Elementor, WooCommerce stores, Core Web Vitals speed optimization, technical SEO, and custom frontend development.",
   keywords: [
     "WordPress Developer",
+    "WordPress Website Development",
+    "Elementor Developer",
     "WooCommerce Specialist",
-    "Custom Web Development",
     "Technical SEO",
     "Core Web Vitals Optimization",
     "Website Speed Optimization",
-    "Elementor Developer",
+    "Custom Web Development",
+    "Frontend Developer",
     "React Next.js Developer",
     "Sri Lanka Web Developer",
     "Kavinda Madusanka",
@@ -43,7 +53,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Kavinda Madusanka", url: "https://github.com/Hkmadusanka" }],
   creator: "Kavinda Madusanka",
   publisher: "Kavinda Madusanka",
-  metadataBase: new URL("https://kavindamadhusanka.dev"),
+  metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
   },
@@ -53,10 +63,10 @@ export const metadata: Metadata = {
     apple: "/kavinda-profile.jpg",
   },
   openGraph: {
-    title: "Kavinda Madusanka | WordPress Developer & Custom Web Specialist",
+    title: "Kavinda Madusanka | WordPress Developer Building Fast, SEO-Friendly Websites",
     description:
-      "WordPress Developer focused on building high-performance websites, e-commerce stores, and custom web applications with speed and search optimization.",
-    url: "https://kavindamadhusanka.dev",
+      "WordPress Developer specializing in high-performance WordPress & WooCommerce websites, Elementor landing pages, technical SEO, and custom web development.",
+    url: siteUrl,
     siteName: "Kavinda Madusanka Portfolio",
     images: [
       {
@@ -71,9 +81,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kavinda Madusanka | WordPress Developer & Custom Web Specialist",
+    title: "Kavinda Madusanka | WordPress Developer Building Fast, SEO-Friendly Websites",
     description:
-      "WordPress Developer focused on building high-performance websites, e-commerce stores, and custom web applications with speed and search optimization.",
+      "WordPress Developer specializing in high-performance WordPress & WooCommerce websites, Elementor landing pages, technical SEO, and custom web development.",
     images: ["/kavinda-profile.jpg"],
   },
   robots: {
@@ -102,21 +112,23 @@ export default function RootLayout({
     url: "https://github.com/Hkmadusanka",
     sameAs: [
       "https://github.com/Hkmadusanka",
-      "https://www.linkedin.com/in/kavinda-madusanka-464a97330/",
+      "https://linkedin.com/in/kavinda-madusanka-547258321",
     ],
     knowsAbout: [
       "WordPress Website Development",
-      "WooCommerce",
-      "Elementor",
+      "Elementor Website Development",
+      "WooCommerce E-Commerce",
       "Spectra Gutenberg Blocks",
-      "React",
-      "Next.js",
-      "Technical SEO",
       "Core Web Vitals Optimization",
+      "Website Speed Optimization",
+      "Technical SEO",
       "Website Security & Maintenance",
+      "HTML, CSS, and JavaScript",
+      "React and Next.js",
+      "Digital Marketing & Website Growth",
     ],
     description:
-      "WordPress-focused Web Developer specializing in custom frontend development, speed optimization, and technical SEO.",
+      "WordPress Developer building fast, SEO-friendly websites, WooCommerce stores, and responsive custom web applications.",
   };
 
   return (

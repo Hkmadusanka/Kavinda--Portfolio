@@ -12,64 +12,64 @@ export interface SkillCategory {
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    id: "wordpress",
-    title: "WordPress & CMS Architecture",
-    description: "My core specialization: building bespoke, conversion-optimized, responsive websites on the WordPress ecosystem.",
+    id: "wordpress-cms",
+    title: "WordPress & CMS",
+    description: "My primary specialization: engineering bespoke, conversion-optimized, and maintainable WordPress solutions.",
     isPrimary: true,
     skills: [
-      { name: "WordPress Core Development", levelDescription: "Custom themes, child themes, block themes, hooks & filters", tag: "Primary" },
-      { name: "WooCommerce E-Commerce", levelDescription: "Store setup, product catalogs, cart optimization, local gateways (LKR/COD)", tag: "Primary" },
-      { name: "Elementor & Visual Page Builders", levelDescription: "Pixel-perfect visual design, custom widgets, dynamic templates" },
-      { name: "Spectra & Gutenberg Blocks", levelDescription: "Native block editor development, lightweight block assemblies" },
-      { name: "Business Websites & Landing Pages", levelDescription: "High-converting corporate portals, portfolio sites, lead capture funnels" },
-      { name: "Responsive & User-Friendly Design", levelDescription: "Cross-device responsiveness, fluid typography, mobile-first design" },
+      { name: "WordPress Website Development", levelDescription: "Custom themes, child themes, block themes, hooks & filters", tag: "Primary" },
+      { name: "Elementor Website Development", levelDescription: "Pixel-perfect visual design, custom widgets, responsive styling", tag: "Core" },
+      { name: "WooCommerce & E-Commerce", levelDescription: "Store setup, product catalogs, cart optimization, local payments (LKR/COD)", tag: "Core" },
+      { name: "Spectra & Gutenberg Blocks", levelDescription: "Modular block architecture, lightweight layouts, high performance" },
+      { name: "Business Websites & Landing Pages", levelDescription: "Conversion-oriented layout structures, clear CTAs, lead capture" },
+      { name: "Responsive & User-Friendly Design", levelDescription: "Cross-device responsiveness, mobile-first layouts, accessible UI" },
     ],
   },
   {
-    id: "custom-dev",
-    title: "Custom Frontend Development",
-    description: "Versatile engineering skills allowing me to build reactive web apps and bridge WordPress with modern JavaScript tools.",
+    id: "frontend-dev",
+    title: "Frontend Development",
+    description: "Building responsive, modern user interfaces that bridge WordPress with modern frontend technologies.",
     skills: [
-      { name: "HTML5, Modern CSS & JavaScript", levelDescription: "Semantic structure, modern ES6+, flexbox, grid, and DOM manipulation" },
-      { name: "React & Next.js", levelDescription: "Component-driven architecture, App Router, SSR, dynamic routing" },
-      { name: "Tailwind CSS", levelDescription: "Utility-first design systems, custom configuration, responsive styling" },
-      { name: "Zustand & State Management", levelDescription: "Predictable client-side state, undo/redo flows, synchronized stores" },
-      { name: "Client-side PDF & Canvas Generation", levelDescription: "Vector rendering, html2canvas, and jsPDF document export" },
+      { name: "HTML5 & Semantic Markup", levelDescription: "Accessible structure, SEO-friendly DOM, semantic headings" },
+      { name: "CSS3 & Modern Styling", levelDescription: "Flexbox, CSS Grid, custom properties, responsive breakpoints" },
+      { name: "JavaScript (ES6+)", levelDescription: "DOM manipulation, asynchronous operations, event handling, APIs" },
+      { name: "React & Next.js", levelDescription: "Component-driven architecture, App Router, SSR, and dynamic web apps" },
+      { name: "Tailwind CSS", levelDescription: "Design systems, utility-first styling, and clean maintenance" },
     ],
   },
   {
-    id: "databases",
-    title: "Databases & Cloud Backends",
-    description: "Connecting frontend experiences with reliable database storage, authentication, and real-time streams.",
-    skills: [
-      { name: "Supabase", levelDescription: "PostgreSQL cloud backend, real-time subscriptions, auth, RESTful APIs" },
-      { name: "MongoDB", levelDescription: "Document-oriented NoSQL database modeling, collections, CRUD operations" },
-      { name: "REST APIs & JSON Integration", levelDescription: "Third-party endpoint consumption, webhook handling, data synchronization" },
-      { name: "MySQL / MariaDB", levelDescription: "WordPress relational schema, queries, database optimization and backups" },
-    ],
-  },
-  {
-    id: "seo-performance",
+    id: "seo-optimization",
     title: "SEO & Website Optimization",
-    description: "Ensuring every website ranks high on search engines and delivers lightning-fast load times for visitors.",
+    description: "Ensuring websites load fast, pass Core Web Vitals, and are easily indexed by search engines.",
     isPrimary: true,
     skills: [
-      { name: "Technical SEO", levelDescription: "Crawlability, sitemaps, robots.txt, canonicalization, schema markup" },
-      { name: "On-Page SEO", levelDescription: "Semantic heading hierarchies, meta optimization, internal linking strategy" },
+      { name: "Technical SEO", levelDescription: "Sitemaps, robots.txt, canonicalization, Schema.org structured data", tag: "Core" },
+      { name: "On-Page SEO", levelDescription: "Heading hierarchy, meta titles & descriptions, content readability" },
       { name: "Website Speed Optimization", levelDescription: "Asset minification, caching layers, server response time tuning" },
-      { name: "Core Web Vitals Optimization", levelDescription: "Minimizing LCP, zeroing CLS, and optimizing INP (Interaction to Next Paint)" },
-      { name: "Image & Media Compression", levelDescription: "Next-gen WebP/AVIF delivery, responsive srcsets, lazy loading" },
+      { name: "Core Web Vitals Improvement", levelDescription: "Optimizing LCP (loading), minimizing CLS (layout shifts), tuning INP" },
+      { name: "Image & Media Optimization", levelDescription: "Modern WebP/AVIF formats, responsive image srcsets, lazy loading" },
     ],
   },
   {
     id: "security-maintenance",
     title: "Website Security & Maintenance",
-    description: "Keeping websites fortified, monitored, and running smoothly without downtime or technical debt.",
+    description: "Keeping websites protected, updated, monitored, and running reliably without downtime.",
     skills: [
-      { name: "Website Security Improvements", levelDescription: "Malware prevention, login hardening, SSL enforcement, vulnerability patching" },
+      { name: "Website Security Hardening", levelDescription: "Login protection, SSL enforcement, vulnerability prevention, file permissions" },
       { name: "Bug Fixing & Troubleshooting", levelDescription: "Resolving PHP fatal errors, plugin conflicts, JavaScript breakages" },
-      { name: "Routine Maintenance & Updates", levelDescription: "Safe core/plugin/theme update workflows with staging backups" },
-      { name: "Migration & Hosting Configuration", levelDescription: "Domain pointing, DNS management, server migrations without data loss" },
+      { name: "Website Maintenance & Updates", levelDescription: "Safe core/plugin/theme update workflows with backups" },
+      { name: "Hosting & Migration Support", levelDescription: "DNS configuration, domain pointing, server migrations without data loss" },
+    ],
+  },
+  {
+    id: "digital-marketing",
+    title: "Digital Marketing",
+    description: "Supporting website traffic and business growth with actionable tracking and visibility practices.",
+    skills: [
+      { name: "Conversion Rate Optimization (CRO)", levelDescription: "Strategic CTA placement, intuitive form flow, reduced friction" },
+      { name: "Analytics & Search Console Setup", levelDescription: "Google Analytics 4 event tracking, Search Console indexing verification" },
+      { name: "Landing Page Lead Generation", levelDescription: "High-intent landing pages structured for marketing campaigns" },
+      { name: "Local SEO & Business Visibility", levelDescription: "Local business schema, location landing pages, search readiness" },
     ],
   },
 ];
@@ -78,7 +78,7 @@ export interface Service {
   id: string;
   number: string;
   title: string;
-  category: "WordPress" | "Custom Development" | "Optimization & Care";
+  category: "WordPress" | "Custom Development" | "Optimization" | "Maintenance";
   description: string;
   highlights: string[];
   isPrimary?: boolean;
@@ -86,89 +86,62 @@ export interface Service {
 
 export const SERVICES: Service[] = [
   {
-    id: "wordpress-dev",
+    id: "wordpress-woocommerce",
     number: "01",
-    title: "WordPress Website Development",
+    title: "WordPress & WooCommerce Development",
     category: "WordPress",
     isPrimary: true,
     description:
-      "Bespoke WordPress websites built from the ground up to reflect your brand identity, communicate clearly with your audience, and scale smoothly as your business expands.",
-    highlights: ["Custom Theme Integration", "Block-First Architecture", "Clean Code Standards", "Scalable Setup"],
+      "Bespoke WordPress websites, Elementor landing pages, and full-featured WooCommerce stores engineered for reliability, intuitive client management, and real business results.",
+    highlights: [
+      "Custom WordPress & Elementor builds",
+      "Full WooCommerce e-commerce setup",
+      "Localized currencies & checkout flows",
+      "Clean, mobile-first responsive design",
+    ],
   },
   {
-    id: "elementor-dev",
+    id: "custom-web-dev",
     number: "02",
-    title: "Elementor Website Development",
-    category: "WordPress",
-    isPrimary: true,
-    description:
-      "Dynamic, design-forward websites crafted with Elementor and visual builders, giving clients total visual control with clean responsive styling and no layout bloat.",
-    highlights: ["Custom Elementor Templates", "Mobile Responsive Tuning", "Custom CSS Tweaks", "User-Friendly Handoff"],
-  },
-  {
-    id: "business-landing",
-    number: "03",
-    title: "Business Websites & Landing Pages",
-    category: "WordPress",
-    description:
-      "High-impact corporate web pages designed to turn visitors into leads and customers, built with intuitive navigation and clear calls-to-action.",
-    highlights: ["Lead Capture Forms", "Conversion-Focused Hierarchy", "Brand Consistency", "Fast Loading Speed"],
-  },
-  {
-    id: "ecommerce-dev",
-    number: "04",
-    title: "E-Commerce Website Development",
-    category: "WordPress",
-    isPrimary: true,
-    description:
-      "Full-featured WooCommerce online shops with intuitive product catalogs, seamless cart flows, localized currency configuration, and secure checkout methods.",
-    highlights: ["WooCommerce Setup", "Payment Gateway Integration", "Inventory Management", "Mobile Cart Optimization"],
-  },
-  {
-    id: "custom-frontend",
-    number: "05",
-    title: "Custom Frontend Development",
+    title: "Custom Web Development",
     category: "Custom Development",
     description:
-      "Modern web experiences built with HTML5, CSS3, JavaScript, React, and Next.js for interactive applications requiring reactive interfaces and custom workflows.",
-    highlights: ["React & Next.js", "Tailwind CSS Systems", "Interactive UI Components", "API Integrations"],
+      "Modern frontend interfaces and responsive web applications built with semantic HTML5, CSS3, JavaScript, React, and Next.js when custom architecture is needed.",
+    highlights: [
+      "React & Next.js frontend projects",
+      "Tailwind CSS custom design systems",
+      "Interactive UI components & state flows",
+      "RESTful API & cloud backend integration",
+    ],
   },
   {
-    id: "technical-seo",
-    number: "06",
-    title: "Technical SEO",
-    category: "Optimization & Care",
-    description:
-      "Comprehensive search engine foundation ensuring search bots easily discover, crawl, and index your content with structured data and clean code.",
-    highlights: ["Schema.org Structured Data", "XML Sitemaps & Robots.txt", "Canonical URLs", "Heading Structure"],
-  },
-  {
-    id: "speed-optimization",
-    number: "07",
-    title: "Speed Optimization & Core Web Vitals",
-    category: "Optimization & Care",
+    id: "seo-performance-opt",
+    number: "03",
+    title: "SEO & Website Performance Optimization",
+    category: "Optimization",
     isPrimary: true,
     description:
-      "Performance tuning designed to cut bounce rates and boost Google rankings by optimizing Largest Contentful Paint (LCP), Cumulative Layout Shift (CLS), and INP.",
-    highlights: ["Asset Compression & Caching", "Critical CSS Inlining", "Database Optimization", "Server Response Tuning"],
+      "Data-driven technical SEO and speed optimization to accelerate load times, satisfy Google Core Web Vitals, and make your site easy for search engines to crawl and index.",
+    highlights: [
+      "Core Web Vitals tuning (LCP, CLS, INP)",
+      "Technical SEO & Schema.org markup",
+      "Asset minification, caching & compression",
+      "Search-engine-ready site structure",
+    ],
   },
   {
-    id: "security-bug-fixing",
-    number: "08",
-    title: "Website Security & Bug Fixing",
-    category: "Optimization & Care",
+    id: "security-maintenance-care",
+    number: "04",
+    title: "Website Security & Maintenance",
+    category: "Maintenance",
     description:
-      "Rapid diagnosing and resolution of broken layouts, plugin conflicts, PHP errors, and hardening of website defenses against spam and unauthorized intrusion.",
-    highlights: ["Conflict Resolution", "PHP / JS Debugging", "Brute-Force Protection", "SSL & Header Hardening"],
-  },
-  {
-    id: "website-maintenance",
-    number: "09",
-    title: "Website Maintenance & Ongoing Support",
-    category: "Optimization & Care",
-    description:
-      "Proactive scheduled updates, regular database backups, uptime monitoring, and technical maintenance so your website runs without interruption.",
-    highlights: ["Scheduled Core Updates", "Automated Cloud Backups", "Uptime & Health Checks", "Continuous Reliability"],
+      "Proactive website care, security hardening, plugin conflict resolution, and scheduled maintenance to ensure zero downtime and smooth, worry-free operations.",
+    highlights: [
+      "Security hardening & vulnerability audits",
+      "PHP error & plugin conflict troubleshooting",
+      "Safe core, theme & plugin update routines",
+      "Reliable backup & migration procedures",
+    ],
   },
 ];
 
@@ -204,3 +177,4 @@ export const PROCESS_STEPS = [
     icon: "Rocket",
   },
 ];
+

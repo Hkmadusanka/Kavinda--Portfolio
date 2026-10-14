@@ -68,7 +68,7 @@ export default function Footer() {
               <GithubIcon className="w-4 h-4" />
             </a>
             <a
-              href="https://www.linkedin.com/in/kavinda-madusanka-464a97330/"
+              href="https://linkedin.com/in/kavinda-madusanka-547258321"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-xl bg-white/5 border border-white/5 text-slate-300 hover:text-blue-400 hover:border-blue-500/30 transition-all"

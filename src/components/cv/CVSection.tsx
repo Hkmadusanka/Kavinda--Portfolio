@@ -12,8 +12,10 @@ import {
   Code2,
 } from "lucide-react";
 
-const CV_DRIVE_URL =
+const CV_VIEW_URL =
   "https://drive.google.com/file/d/1hU8A4F06ssmBs3jV4XWsJMwZf0GX4Ji0/view?usp=sharing";
+const CV_DOWNLOAD_URL =
+  "https://drive.google.com/uc?export=download&id=1hU8A4F06ssmBs3jV4XWsJMwZf0GX4Ji0";
 
 export default function CVSection() {
   return (
@@ -50,22 +52,22 @@ export default function CVSection() {
             {/* Actions */}
             <div className="mt-8 flex flex-wrap items-center gap-3 w-full sm:w-auto">
               <a
-                href={CV_DRIVE_URL}
+                href={CV_DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-heading font-semibold text-xs sm:text-sm bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-600 text-slate-950 hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-cyan-500/25"
               >
                 <Download className="w-4 h-4" />
-                <span>Download / View CV</span>
+                <span>Download CV (PDF)</span>
               </a>
 
               <a
-                href={CV_DRIVE_URL}
+                href={CV_VIEW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-heading font-medium text-xs sm:text-sm text-slate-200 glass-pill hover:bg-white/10 hover:text-white border border-white/10 transition-all"
               >
-                <span>Open in Google Drive</span>
+                <span>View CV Online</span>
                 <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
               </a>
             </div>
@@ -159,7 +161,7 @@ export default function CVSection() {
                   hkmadusanka2002@gmail.com
                 </span>
                 <a
-                  href={CV_DRIVE_URL}
+                  href={CV_VIEW_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1.5"
