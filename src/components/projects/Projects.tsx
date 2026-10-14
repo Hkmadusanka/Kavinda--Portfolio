@@ -35,7 +35,7 @@ export default function Projects() {
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill border border-cyan-500/20 text-xs text-cyan-400 mb-3"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Verified Portfolios</span>
+              <span>Selected Projects</span>
             </motion.div>
 
             <motion.h2
@@ -47,13 +47,13 @@ export default function Projects() {
             >
               Featured Projects.{" "}
               <span className="text-gradient-cyan block mt-1">
-                Verified Code &amp; Genuine Architecture.
+                Real Code &amp; Practical Architecture.
               </span>
             </motion.h2>
           </div>
 
           <p className="text-xs sm:text-sm text-slate-400 max-w-md">
-            Four verified projects demonstrating WordPress &amp; WooCommerce architecture, custom frontend engineering, Supabase backend integration, and responsive web design.
+            Four focused projects demonstrating WordPress &amp; WooCommerce development, custom frontend engineering, Supabase backend integration, and responsive web design.
           </p>
         </div>
 
@@ -214,7 +214,7 @@ export default function Projects() {
                   </a>
                 ) : (
                   <span className="text-[11px] font-mono text-slate-500">
-                    Source Verified
+                    Source on GitHub
                   </span>
                 )}
               </div>
@@ -287,7 +287,7 @@ export default function Projects() {
               )}
 
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-3 border-t border-white/10 text-xs text-slate-400">
-                <span>Verified codebase from GitHub @Hkmadusanka</span>
+                <span>Source code available on GitHub @Hkmadusanka</span>
                 <div className="flex items-center gap-3">
                   <a
                     href={activeModalProject.githubUrl}

@@ -33,16 +33,15 @@ const siteUrl =
     : "https://kavinda-portfolio.vercel.app");
 
 export const metadata: Metadata = {
-  title: "Kavinda Madusanka | WordPress Developer Building Fast, SEO-Friendly Websites",
+  title: "Kavinda Madusanka | WordPress Developer — Fast, SEO-Friendly Websites",
   description:
-    "WordPress Developer building fast, SEO-friendly websites. Specializing in custom WordPress, Elementor, WooCommerce stores, Core Web Vitals speed optimization, technical SEO, and custom frontend development.",
+    "WordPress Developer building fast, SEO-friendly websites. Specializing in custom WordPress, Elementor, WooCommerce stores, speed optimization, technical SEO, and custom frontend development.",
   keywords: [
     "WordPress Developer",
     "WordPress Website Development",
     "Elementor Developer",
     "WooCommerce Specialist",
     "Technical SEO",
-    "Core Web Vitals Optimization",
     "Website Speed Optimization",
     "Custom Web Development",
     "Frontend Developer",
@@ -63,7 +62,7 @@ export const metadata: Metadata = {
     apple: "/kavinda-profile.jpg",
   },
   openGraph: {
-    title: "Kavinda Madusanka | WordPress Developer Building Fast, SEO-Friendly Websites",
+    title: "Kavinda Madusanka | WordPress Developer — Fast, SEO-Friendly Websites",
     description:
       "WordPress Developer specializing in high-performance WordPress & WooCommerce websites, Elementor landing pages, technical SEO, and custom web development.",
     url: siteUrl,
@@ -81,7 +80,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kavinda Madusanka | WordPress Developer Building Fast, SEO-Friendly Websites",
+    title: "Kavinda Madusanka | WordPress Developer — Fast, SEO-Friendly Websites",
     description:
       "WordPress Developer specializing in high-performance WordPress & WooCommerce websites, Elementor landing pages, technical SEO, and custom web development.",
     images: ["/kavinda-profile.jpg"],

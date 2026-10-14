@@ -56,10 +56,10 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="w-full"
             >
-              <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] tracking-tight leading-[1.14] text-white">
-                WordPress Developer Building{" "}
+              <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] tracking-tight leading-[1.15] text-white">
+                I Build Fast,{" "}
                 <span className="text-gradient-cyan block mt-1.5 sm:mt-2">
-                  Fast, SEO-Friendly Websites.
+                  SEO-Friendly WordPress Websites.
                 </span>
               </h1>
             </motion.div>
@@ -71,7 +71,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl font-normal"
             >
-              Specializing in custom WordPress, Elementor, and WooCommerce store development, Core Web Vitals speed optimization, technical SEO, and modern frontend engineering with React and Next.js.
+              Specializing in WordPress, Elementor, and WooCommerce store development, speed optimization, technical SEO, and custom frontend development with React and Next.js.
             </motion.p>
 
             {/* Clear Calls to Action (View My Projects, Download CV, Contact Me) */}
@@ -145,7 +145,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-1.5">
                 <Zap className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Core Web Vitals &amp; Speed</span>
+                <span>Speed &amp; Performance Focus</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-cyan-400" />
@@ -188,7 +188,7 @@ export default function Hero() {
                   {/* Top Corner Floating Tech Tag */}
                   <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-cyan-500/30 text-[10px] font-medium text-cyan-300 flex items-center gap-1.5 shadow-lg">
                     <Sparkles className="w-3 h-3 text-cyan-400" />
-                    <span>Real Identity &bull; Colombo, LK</span>
+                    <span>Sri Lanka &bull; Available for Work</span>
                   </div>
 
                   {/* Bottom Portrait Info Strip */}
@@ -212,8 +212,8 @@ export default function Hero() {
                     <div className="text-slate-400 text-[10px]">Featured Projects</div>
                   </div>
                   <div className="p-1.5 rounded-lg bg-white/[0.02] border border-white/5">
-                    <div className="font-heading font-bold text-cyan-400 text-xs">Verified</div>
-                    <div className="text-slate-400 text-[10px]">Open Source Repos</div>
+                    <div className="font-heading font-bold text-cyan-400 text-xs">Public</div>
+                    <div className="text-slate-400 text-[10px]">GitHub Repositories</div>
                   </div>
                 </div>
               </div>

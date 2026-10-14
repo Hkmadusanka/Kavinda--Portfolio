@@ -117,11 +117,11 @@ export const SERVICES: Service[] = [
   {
     id: "seo-performance-opt",
     number: "03",
-    title: "SEO & Website Performance Optimization",
+    title: "SEO & Website Performance",
     category: "Optimization",
     isPrimary: true,
     description:
-      "Data-driven technical SEO and speed optimization to accelerate load times, satisfy Google Core Web Vitals, and make your site easy for search engines to crawl and index.",
+      "Technical SEO and speed optimization to accelerate load times, improve Core Web Vitals, and ensure your site is easy for search engines to crawl and index.",
     highlights: [
       "Core Web Vitals tuning (LCP, CLS, INP)",
       "Technical SEO & Schema.org markup",

@@ -214,11 +214,11 @@ export default function About() {
               </div>
             </div>
 
-            {/* Bottom Verification Note */}
+            {/* Bottom Note */}
             <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
               <span className="flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400" />
-                Verified across active projects &amp; client repositories
+                Demonstrated across public repositories &amp; practical projects
               </span>
               <span className="font-mono text-[10px] text-slate-500">
                 No Arbitrary Percentages

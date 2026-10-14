@@ -41,12 +41,12 @@ export default function CVSection() {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-4xl tracking-tight text-white">
               Professional Resume.{" "}
               <span className="text-gradient-cyan block mt-1">
-                Verified Experience &amp; Technical Skillset.
+                Technical Skillset &amp; Development Work.
               </span>
             </h2>
 
             <p className="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed max-w-lg">
-              Download or preview my complete curriculum vitae covering WordPress development, custom frontend engineering with React and Next.js, Core Web Vitals optimization, and technical project delivery.
+              Download or preview my complete curriculum vitae covering WordPress development, custom frontend engineering with React and Next.js, speed optimization, and web project delivery.
             </p>
 
             {/* Actions */}
@@ -84,11 +84,11 @@ export default function CVSection() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>SEO &amp; Speed Audits</span>
+                <span>SEO &amp; Performance</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0" />
-                <span>Remote &amp; Full-Time</span>
+                <span>Remote &amp; Contract</span>
               </div>
             </div>
           </motion.div>
@@ -113,7 +113,7 @@ export default function CVSection() {
                       Curriculum Vitae — Kavinda Madusanka
                     </h3>
                     <p className="text-[11px] text-slate-400 font-mono">
-                      PDF Document &bull; Verified Portfolio Attachment
+                      PDF Document &bull; Resume
                     </p>
                   </div>
                 </div>
