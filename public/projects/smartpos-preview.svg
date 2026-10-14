@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="posBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="posCardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#posBgGrad)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="36" cy="32" r="14" fill="#10b981"/>
+  <text x="36" y="37" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#07090e" text-anchor="middle">SP</text>
+  <text x="64" y="37" font-family="'Space Grotesk', system-ui, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">SmartPOS Pro</text>
+  <rect x="200" y="22" width="130" height="22" rx="11" fill="rgba(16, 185, 129, 0.15)"/>
+  <text x="265" y="37" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="500" fill="#34d399" text-anchor="middle">⚡ Supabase Connected</text>
+
+  <!-- Navigation items -->
+  <text x="400" y="37" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">Dashboard</text>
+  <text x="490" y="37" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#94a3b8">Billing Terminal</text>
+  <text x="605" y="37" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#94a3b8">Inventory (42)</text>
+  <text x="715" y="37" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#94a3b8">Analytics</text>
+
+  <!-- Top Stats Row (3 Cards) -->
+  <g transform="translate(40, 84)">
+    <!-- Card 1: Today's Revenue -->
+    <rect width="250" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" filter="url(#posCardGlow)"/>
+    <text x="20" y="32" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">TODAY'S REVENUE</text>
+    <text x="20" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="24" font-weight="bold" fill="#f8fafc">LKR 184,520</text>
+    <text x="180" y="62" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#34d399">+14.2% ↑</text>
+
+    <!-- Card 2: Completed Orders -->
+    <g transform="translate(270, 0)">
+      <rect width="250" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" filter="url(#posCardGlow)"/>
+      <text x="20" y="32" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">ORDERS PROCESSED</text>
+      <text x="20" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="24" font-weight="bold" fill="#f8fafc">342 Sales</text>
+      <text x="180" y="62" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#38bdf8">99.4% ok</text>
+    </g>
+
+    <!-- Card 3: Low Stock Alerts -->
+    <g transform="translate(540, 0)">
+      <rect width="250" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" filter="url(#posCardGlow)"/>
+      <text x="20" y="32" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">INVENTORY HEALTH</text>
+      <text x="20" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="24" font-weight="bold" fill="#f8fafc">3 Low Stock</text>
+      <text x="180" y="62" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#f59e0b">Alerts</text>
+    </g>
+
+    <!-- Card 4: Terminal Status -->
+    <g transform="translate(810, 0)">
+      <rect width="310" height="90" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" filter="url(#posCardGlow)"/>
+      <text x="20" y="32" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">ACTIVE TERMINAL</text>
+      <text x="20" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="22" font-weight="bold" fill="#34d399">POS Station #01</text>
+      <circle cx="270" cy="56" r="6" fill="#10b981"/>
+    </g>
+  </g>
+
+  <!-- Main Content Split: Left (POS Item Selection & Chart) / Right (Live Invoice Receipt) -->
+  <!-- Left Side: Interactive Item Selection & Revenue Chart -->
+  <g transform="translate(40, 195)">
+    <!-- Chart Panel -->
+    <rect width="700" height="210" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    <text x="24" y="32" font-family="'Space Grotesk', system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc">Hourly Sales Velocity</text>
+    <text x="600" y="32" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#38bdf8">Real-time Stream</text>
+
+    <!-- Area Chart Path -->
+    <path d="M 40 160 Q 140 140 220 90 T 380 120 T 520 60 T 660 75 L 660 170 L 40 170 Z" fill="url(#chartGrad)"/>
+    <path d="M 40 160 Q 140 140 220 90 T 380 120 T 520 60 T 660 75" fill="none" stroke="#38bdf8" stroke-width="3"/>
+    
+    <!-- Chart Data Points -->
+    <circle cx="220" cy="90" r="4" fill="#00f2fe"/>
+    <circle cx="520" cy="60" r="5" fill="#00f2fe"/>
+    <text x="520" y="48" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">Peak LKR 48k</text>
+
+    <!-- Category Quick Grid -->
+    <g transform="translate(0, 230)">
+      <rect width="700" height="235" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+      <text x="24" y="32" font-family="'Space Grotesk', system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc">Quick POS Item Selector</text>
+
+      <!-- 4 Item Cards in Grid -->
+      <g transform="translate(24, 50)">
+        <!-- Item 1 -->
+        <rect width="150" height="150" rx="8" fill="#162032" stroke="#1e293b" stroke-width="1"/>
+        <rect x="16" y="16" width="40" height="40" rx="6" fill="#0284c7" opacity="0.2"/>
+        <text x="36" y="42" font-family="'Inter', system-ui, sans-serif" font-size="18" text-anchor="middle">☕</text>
+        <text x="16" y="80" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Ceylon Espresso</text>
+        <text x="16" y="100" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">SKU: CE-042</text>
+        <text x="16" y="132" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8">LKR 650</text>
+
+        <!-- Item 2 -->
+        <g transform="translate(165, 0)">
+          <rect width="150" height="150" rx="8" fill="#162032" stroke="#1e293b" stroke-width="1"/>
+          <rect x="16" y="16" width="40" height="40" rx="6" fill="#10b981" opacity="0.2"/>
+          <text x="36" y="42" font-family="'Inter', system-ui, sans-serif" font-size="18" text-anchor="middle">🥐</text>
+          <text x="16" y="80" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Butter Croissant</text>
+          <text x="16" y="100" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">SKU: BC-108</text>
+          <text x="16" y="132" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8">LKR 450</text>
+        </g>
+
+        <!-- Item 3 -->
+        <g transform="translate(330, 0)">
+          <rect width="150" height="150" rx="8" fill="#162032" stroke="#1e293b" stroke-width="1"/>
+          <rect x="16" y="16" width="40" height="40" rx="6" fill="#8b5cf6" opacity="0.2"/>
+          <text x="36" y="42" font-family="'Inter', system-ui, sans-serif" font-size="18" text-anchor="middle">🥗</text>
+          <text x="16" y="80" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Organic Bowl</text>
+          <text x="16" y="100" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">SKU: OB-712</text>
+          <text x="16" y="132" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8">LKR 1,200</text>
+        </g>
+
+        <!-- Item 4 -->
+        <g transform="translate(495, 0)">
+          <rect width="150" height="150" rx="8" fill="#162032" stroke="#1e293b" stroke-width="1"/>
+          <rect x="16" y="16" width="40" height="40" rx="6" fill="#f59e0b" opacity="0.2"/>
+          <text x="36" y="42" font-family="'Inter', system-ui, sans-serif" font-size="18" text-anchor="middle">🧃</text>
+          <text x="16" y="80" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc">Fresh Passion</text>
+          <text x="16" y="100" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">SKU: FP-301</text>
+          <text x="16" y="132" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#38bdf8">LKR 550</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Active POS Cart & Billing Terminal -->
+  <g transform="translate(760, 195)">
+    <rect width="400" height="465" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" filter="url(#posCardGlow)"/>
+    <text x="24" y="36" font-family="'Space Grotesk', system-ui, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">Active Order #1042</text>
+    <text x="376" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="end">Takeaway</text>
+    <line x1="24" y1="50" x2="376" y2="50" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Order Items List -->
+    <g transform="translate(24, 70)">
+      <text x="0" y="16" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#f8fafc">2x Ceylon Espresso</text>
+      <text x="352" y="16" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="end">LKR 1,300</text>
+
+      <text x="0" y="56" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#f8fafc">1x Butter Croissant</text>
+      <text x="352" y="56" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="end">LKR 450</text>
+
+      <text x="0" y="96" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#f8fafc">1x Fresh Passion Juice</text>
+      <text x="352" y="96" font-family="'Space Grotesk', system-ui, sans-serif" font-size="13" font-weight="600" fill="#f8fafc" text-anchor="end">LKR 550</text>
+    </g>
+
+    <!-- Subtotal & Tax Calculation -->
+    <g transform="translate(24, 230)">
+      <line x1="0" y1="0" x2="352" y2="0" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4"/>
+      <text x="0" y="30" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">Subtotal</text>
+      <text x="352" y="30" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#f8fafc" text-anchor="end">LKR 2,300</text>
+      
+      <text x="0" y="54" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">Service &amp; VAT (0%)</text>
+      <text x="352" y="54" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#f8fafc" text-anchor="end">LKR 0</text>
+
+      <line x1="0" y1="74" x2="352" y2="74" stroke="#1e293b" stroke-width="1"/>
+
+      <text x="0" y="104" font-family="'Space Grotesk', system-ui, sans-serif" font-size="17" font-weight="bold" fill="#f8fafc">Total Amount</text>
+      <text x="352" y="104" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="bold" fill="#34d399" text-anchor="end">LKR 2,300</text>
+    </g>
+
+    <!-- Checkout Action Button -->
+    <g transform="translate(24, 380)">
+      <rect width="352" height="46" rx="8" fill="url(#emeraldGrad)"/>
+      <text x="176" y="28" font-family="'Space Grotesk', system-ui, sans-serif" font-size="15" font-weight="700" fill="#07090e" text-anchor="middle">Complete Cash / Card Sale →</text>
+    </g>
+  </g>
+</svg>

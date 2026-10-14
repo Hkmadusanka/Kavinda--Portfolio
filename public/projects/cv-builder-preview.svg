@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1222"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="60" fill="#0b1120" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="36" cy="30" r="14" fill="#0284c7"/>
+  <text x="36" y="35" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">CV</text>
+  <text x="65" y="36" font-family="'Space Grotesk', system-ui, sans-serif" font-size="16" font-weight="600" fill="#f8fafc">CV Builder Studio</text>
+  <rect x="230" y="20" width="90" height="22" rx="11" fill="rgba(56, 189, 248, 0.15)"/>
+  <text x="275" y="35" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#38bdf8" text-anchor="middle">React 19 + Vite</text>
+
+  <!-- Action controls (Undo / Redo / Export PDF) -->
+  <g transform="translate(940, 16)">
+    <rect width="90" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="45" y="19" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Undo / Redo</text>
+    <rect x="100" y="0" width="130" height="28" rx="6" fill="url(#accentGrad)"/>
+    <text x="165" y="19" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#07090e" text-anchor="middle">↓ Download PDF</text>
+  </g>
+
+  <!-- Left Sidebar / Multi-step Form -->
+  <g transform="translate(40, 80)">
+    <rect width="360" height="580" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1" filter="url(#cardShadow)"/>
+    
+    <!-- Template Selector Tabs -->
+    <text x="24" y="36" font-family="'Space Grotesk', system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc">Choose Template</text>
+    <g transform="translate(24, 48)">
+      <rect width="98" height="32" rx="6" fill="#0284c7"/>
+      <text x="49" y="21" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="600" fill="#ffffff" text-anchor="middle">Modern</text>
+      <rect x="106" y="0" width="98" height="32" rx="6" fill="#1e293b"/>
+      <text x="155" y="21" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Minimal</text>
+      <rect x="212" y="0" width="98" height="32" rx="6" fill="#1e293b"/>
+      <text x="261" y="21" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Executive</text>
+    </g>
+
+    <!-- Form Section: Personal Info -->
+    <text x="24" y="125" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8">1. Personal Information</text>
+    
+    <text x="24" y="152" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">FULL NAME</text>
+    <rect x="24" y="160" width="312" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="36" y="183" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#f1f5f9">Alex Morgan</text>
+
+    <text x="24" y="218" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">JOB TITLE</text>
+    <rect x="24" y="226" width="312" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="36" y="249" font-family="'Inter', system-ui, sans-serif" font-size="13" fill="#f1f5f9">Senior Frontend Developer</text>
+
+    <text x="24" y="284" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#64748b">EMAIL &amp; PHONE</text>
+    <rect x="24" y="292" width="150" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="36" y="315" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">alex@dev.io</text>
+    <rect x="186" y="292" width="150" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="198" y="315" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#94a3b8">+1 (555) 019-2834</text>
+
+    <!-- Experience Accordion -->
+    <text x="24" y="360" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="600" fill="#94a3b8">2. Experience (2 items)</text>
+    <rect x="24" y="372" width="312" height="42" rx="6" fill="#162032" stroke="#1e293b" stroke-width="1"/>
+    <text x="36" y="398" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="500" fill="#f8fafc">TechCorp Solutions — Lead Dev</text>
+
+    <!-- Education Section -->
+    <text x="24" y="445" font-family="'Space Grotesk', system-ui, sans-serif" font-size="14" font-weight="600" fill="#94a3b8">3. Education &amp; Certifications</text>
+    <rect x="24" y="457" width="312" height="42" rx="6" fill="#162032" stroke="#1e293b" stroke-width="1"/>
+    <text x="36" y="483" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="500" fill="#f8fafc">B.Sc. in Computer Science</text>
+
+    <!-- Next Step Button -->
+    <rect x="24" y="520" width="312" height="38" rx="8" fill="url(#accentGrad)"/>
+    <text x="180" y="544" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="600" fill="#07090e" text-anchor="middle">Continue to Skills →</text>
+  </g>
+
+  <!-- Right: Live Synchronized A4 Canvas Preview -->
+  <g transform="translate(440, 80)">
+    <!-- Canvas wrapper frame with scale indicator -->
+    <rect width="720" height="580" rx="12" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+    <text x="36" y="34" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">LIVE A4 CANVA PREVIEW (ZOOM: 85%)</text>
+    <circle cx="680" cy="30" r="4" fill="#22c55e"/>
+    <text x="668" y="34" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#22c55e" text-anchor="end">Live Synced</text>
+
+    <!-- Real A4 Sheet Shadow & Body -->
+    <g transform="translate(130, 48)" filter="url(#cardShadow)">
+      <rect width="460" height="510" rx="3" fill="#ffffff"/>
+      
+      <!-- Resume Header -->
+      <rect x="0" y="0" width="460" height="75" fill="#0f172a"/>
+      <text x="32" y="36" font-family="'Space Grotesk', system-ui, sans-serif" font-size="19" font-weight="bold" fill="#ffffff">ALEX MORGAN</text>
+      <text x="32" y="56" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#38bdf8">SENIOR FRONTEND DEVELOPER</text>
+      <text x="428" y="46" font-family="'Inter', system-ui, sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">alex@dev.io | +1 555-019</text>
+
+      <!-- Resume 2 Columns -->
+      <!-- Left subcolumn (Experience) -->
+      <g transform="translate(32, 95)">
+        <text x="0" y="14" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">PROFESSIONAL EXPERIENCE</text>
+        <line x1="0" y1="20" x2="240" y2="20" stroke="#0284c7" stroke-width="2"/>
+        
+        <text x="0" y="38" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">TechCorp Solutions — Lead Dev</text>
+        <text x="0" y="50" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#64748b">2022 – Present | Colombo, LK</text>
+        <text x="0" y="66" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#334155">• Architected high-performance web applications using React &amp; Tailwind</text>
+        <text x="0" y="78" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#334155">• Reduced build latency by 42% through code-splitting &amp; Vite</text>
+
+        <text x="0" y="104" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">Apex Digital — Frontend Specialist</text>
+        <text x="0" y="116" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#64748b">2020 – 2022</text>
+        <text x="0" y="132" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#334155">• Delivered 25+ production client portals with 99.8% uptime</text>
+        <text x="0" y="144" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#334155">• Integrated automated PDF invoice generators and client state engines</text>
+
+        <text x="0" y="180" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">EDUCATION</text>
+        <line x1="0" y1="186" x2="240" y2="186" stroke="#0284c7" stroke-width="2"/>
+        <text x="0" y="204" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b">B.Sc. in Computer Science</text>
+        <text x="0" y="217" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#64748b">First Class Honours (2016 – 2020)</text>
+      </g>
+
+      <!-- Right subcolumn (Skills & Tools) -->
+      <g transform="translate(295, 95)">
+        <text x="0" y="14" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">CORE SKILLS</text>
+        <line x1="0" y1="20" x2="135" y2="20" stroke="#0284c7" stroke-width="2"/>
+
+        <g transform="translate(0, 32)">
+          <rect width="60" height="18" rx="4" fill="#e0f2fe"/>
+          <text x="30" y="13" font-family="'Inter', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#0284c7" text-anchor="middle">React 19</text>
+          <rect x="68" y="0" width="60" height="18" rx="4" fill="#e0f2fe"/>
+          <text x="98" y="13" font-family="'Inter', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#0284c7" text-anchor="middle">Tailwind</text>
+
+          <rect x="0" y="26" width="60" height="18" rx="4" fill="#e0f2fe"/>
+          <text x="30" y="39" font-family="'Inter', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#0284c7" text-anchor="middle">Zustand</text>
+          <rect x="68" y="26" width="60" height="18" rx="4" fill="#e0f2fe"/>
+          <text x="98" y="39" font-family="'Inter', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#0284c7" text-anchor="middle">Vite</text>
+
+          <rect x="0" y="52" width="60" height="18" rx="4" fill="#e0f2fe"/>
+          <text x="30" y="65" font-family="'Inter', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#0284c7" text-anchor="middle">jsPDF</text>
+          <rect x="68" y="52" width="60" height="18" rx="4" fill="#e0f2fe"/>
+          <text x="98" y="65" font-family="'Inter', system-ui, sans-serif" font-size="8.5" font-weight="600" fill="#0284c7" text-anchor="middle">Canvas</text>
+        </g>
+
+        <text x="0" y="125" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0f172a">LANGUAGES</text>
+        <line x1="0" y1="131" x2="135" y2="131" stroke="#0284c7" stroke-width="2"/>
+        <text x="0" y="148" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#334155">English (Professional)</text>
+        <text x="0" y="162" font-family="'Inter', system-ui, sans-serif" font-size="8.5" fill="#334155">Sinhala (Native)</text>
+      </g>
+    </g>
+  </g>
+</svg>
